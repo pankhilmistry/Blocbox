@@ -1,0 +1,89 @@
+html, body {
+	overflow-x: hidden;
+}
+body {
+    color:#333333;
+ }
+
+
+.container-hero h2{
+font-family: "Lora", serif;
+font-size: 21px;
+	font-weight: 400;
+}
+
+.Pricing h2{
+	font-family: "Lora", serif;
+font-size: 21px;
+	font-weight: 400;
+}
+
+.Testimonials h2{
+	font-family: "Lora", serif;
+font-size: 21px;
+	font-weight: 400;
+}
+
+h1{font-family: "Montserrat", sans-serif;
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+h2{font-family: "Montserrat", sans-serif;
+	font-size: 21px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+h3{font-family: "Montserrat", sans-serif;
+	font-size: 21px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+h4 {
+   font-family: "Lora", serif;
+   font-size:36px;
+   line-height: 0px;
+   font-weight: 400;
+ }
+
+p {
+   font-family: "Lora", serif;
+   font-size:16px;
+   line-height: 19px;
+   font-weight: 400;
+ }
+
+ blockquote {
+ 	font-family: "Lora", serif;
+   font-size:28px;
+   font-weight: 400;
+   font-style: italic;
+ }
+
+ .container {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	position: relative;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ }
+
+ .container:before, .container:after {
+ 	content: " ";
+ 	display: table;
+ }
+
+ .container:after {
+ 	clear: both;
+
+ }
+
+ .one-half, .one-third {
+ 	width: 96%;
+ 	float:left;
+ 	position:relative;
+ 	min-height: 1px;
+ 	margin: 0 2% 20px;
+ }
+ 
