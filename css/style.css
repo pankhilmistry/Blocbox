@@ -107,6 +107,20 @@ p {
 
 }
 
+.btn {
+  position: relative;
+   font-family: "Montserrat", sans-serif;
+   font-size: 21px;
+   font-weight: 600;
+   border-radius: 4px;
+   color:#f5f5f5;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #0ADD8A;
+   border: 2px solid #0ADD8A;
+   box-shadow: 0px 2px 0px 0px #219653;
+}
+
  @media (min-width: 768px) {
    .container {
      width: 750px;
