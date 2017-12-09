@@ -14,9 +14,14 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
+<link rel="stylesheet" href="css/dropit.css">
 </head>
 <body class="dashboard">
+
+<!-- RESPONSIVE NAV -->
+   <a class="hamburger" id="menu" href="#">&#9776;</a>
+
+
 	<!--LEFT NAV-->
 
 <nav id="left-nav" class="left-nav">
@@ -53,7 +58,23 @@
 		<div class="container">
 			<div class="header">
 				<h1>All Items</h1>
-				<a href="#" class="btn">+ Add</a>
+				
+<ul class="menu">
+            <li>
+              <a href="#" class="btn">+ Add</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>Image</a></li>
+                  <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i>Link</a></li>
+                  <li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Doc</a></li>
+                  <li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i>Video</a></li>
+                  <li><a href="#"><i class="fa fa-microphone" aria-hidden="true"></i>Audio Note</a></li>
+                  <li><a href="#"><i class="fa fa-paint-brush" aria-hidden="true"></i>Sketch</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
         <span class="line1"></span>
         <span class="line2"></span>
         <span class="line3"></span>
@@ -140,6 +161,15 @@ deployment of didactic little parable-ish stories. The story ["thing"] turns out
      </div>
 	</section>
 </main>
+<script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/dropit.js"></script>
+   <script type="text/javascript">
+   $(".menu").dropit();
+   $("#menu").click(function(){
+    $("#left-nav").toggleClass("open",200);
+   });
+ </script>
+
 
 </body>
 </html>
