@@ -100,11 +100,24 @@ p {
  	
  }
  
-.one-fifth{min-height: 1px;
-	position: relative;
-	width: 17.9487179487179488%;
-	margin:10px auto;
 
+
+.one-fifth {min-height: 1px;
+  position: relative;
+  margin:10px auto;
+    width: 100%;
+}
+
+@media screen and (min-width:500px) {
+    .one-fifth {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .one-fifth {
+         width: 17.9487179487179488%;
+    }
 }
 
 .btn {
@@ -150,6 +163,7 @@ p {
 
 
 header {
+  height: 100vh;
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -255,6 +269,7 @@ header::before {
 }
 
 .Benefits1 h1{
+  text-shadow: 2px 2px 5px #333;
 	color: #f5f5f5;
 	text-align: left;
 	margin: 0 0 0 50px;
@@ -288,8 +303,12 @@ header::before {
 }
 
 .Benefits1-icon{
-	padding-left: 20px;
-	padding-right: 20px;
+
+  display: flex;
+    margin: auto;
+    min-width: 60px;
+    margin-right: 20px;
+    padding-bottom: 20px;
 }
 
 .Benefits1-icon i{
@@ -298,8 +317,8 @@ header::before {
   -webkit-text-fill-color: transparent;
   
 	font-size: 60px;
-	margin:auto;
-	transform: translate(-10px,16px);
+  margin:auto;
+	
 }
 
 .Benefits1-content{
@@ -331,7 +350,7 @@ header::before {
 	padding-bottom: 20px;
 }
 
-.Benefits2 h1{
+.Benefits2 h1{text-shadow: 2px 2px 5px #333;
 	color: #f5f5f5;
 	text-align: right;
 	margin: 0 154px 0 0;
@@ -366,8 +385,11 @@ header::before {
 }
 
 .Benefits2-icon{
-	padding-left: 20px;
-	padding-right: 20px;
+	display: flex;
+    margin: auto;
+    min-width: 60px;
+    margin-right: 20px;
+    padding-bottom: 20px;
 }
 
 .Benefits2-icon i{
@@ -377,7 +399,7 @@ header::before {
   
 	font-size: 60px;
 	margin:auto;
-	transform: translate(-10px,16px);
+	
 }
 
 .Benefits2-content{
@@ -411,7 +433,7 @@ header::before {
 
 
 
-.Pricing h1{
+.Pricing h1{text-shadow: 2px 2px 5px #333;
 	padding-bottom:10px;
 	color: #f5f5f5;
 	text-align: left;
@@ -419,7 +441,7 @@ header::before {
 	position: relative;
 }
 
-.Pricing h2 {
+.Pricing h2 {text-shadow: 1px 1px 4px #333;
 	font-family: "Lora", serif;
 	font-size: 21px;
 	font-weight: 400;
@@ -427,6 +449,14 @@ header::before {
 	text-align: left;
 	margin: 0 0 0 50px;
 	position: relative;
+}
+
+.Pricing div.one-third{
+  min-width: 80%;
+margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Pricing ul {
@@ -450,23 +480,25 @@ header::before {
    color:#f5f5f5;
    font-weight: 600;
    text-decoration: none;
+   text-align: center;
    padding:10px 30px;
    background: #0ADD8A;
    border: 2px solid #0ADD8A;
    box-shadow: 0px 2px 0px 0px #219653;
 }
 
-.box {
+.box {min-width:300px;
    padding:0 15px 15px;
    background: #FFFFFF;
-   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.40);
    min-height: 420px;
    position: relative;
    margin-top: 25px;
  }
- .box.middle {
+ .box.middle {min-width:300px;
    min-height: 480px;
    margin-top:25px;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.40);
  }
 
 .box h2{
@@ -485,7 +517,6 @@ header::before {
 
 
  .box h3 {
- 	font-family: 
    color: #37474f;
    background: #ff5252;
    left:0;
@@ -497,7 +528,7 @@ header::before {
  }
 
  .box h4 {
-   
+   text-align: center;
    margin:80px 0 40px;
    
  }
@@ -516,6 +547,8 @@ header::before {
    }
 
  .small {
+  display: flex;
+  justify-content: center;
    font-size: 12px;
    color: #f5f5f5;
    line-height: 15px;
@@ -531,7 +564,7 @@ header::before {
 	padding-bottom: 200px;
 }
 
-.Testimonials h1, .Testimonials h2{
+.Testimonials h1, .Testimonials h2{text-shadow: 2px 2px 5px #333;
 	color: #f5f5f5;
 	margin: 0 0 10px 50px;
 }
@@ -581,6 +614,7 @@ header::before {
 	justify-content: center;
 }
 .Testimonials-client img{
+  box-shadow: 0px 2px 10px #333;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -590,6 +624,7 @@ header::before {
 }
 
 .Testimonials-client p.name{
+  text-shadow: 2px 2px 5px #333;
 	display: inline-block;
 	color: #f5f5f5;
 	padding-left: 20px;
@@ -624,7 +659,7 @@ header::before {
 .Last-section .one-third{
 	display: flex;
 	align-items: center;
-	min-width: 800px;
+	min-width: 700px;
 	text-align: center;
 	color: #f5f5f5;
 	justify-content: center;
@@ -664,7 +699,7 @@ header::before {
 footer {
    background-color: #e0e0e0;
    color: #333;
-   height: 400px;
+   
    position: relative;
    overflow: hidden;
    z-index: 0;
