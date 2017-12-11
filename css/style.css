@@ -792,9 +792,9 @@ font-family: "Montserrat", sans-serif;
   background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 0.8), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
   
 
-  height: 100%;
+  height: 100vh;
   width:280px;
-  position:absolute;
+  position:fixed;
   -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -806,6 +806,7 @@ font-family: "Montserrat", sans-serif;
 }
 
 .left-nav.open {
+
    display:block;
    width:280px;
    color: #f5f5f5;
@@ -822,7 +823,7 @@ font-family: "Montserrat", sans-serif;
  }
 
 .hamburger {
-   position:absolute;
+   position:fixed;
    z-index: 1000;
    background:#37474f;
    color:#f5f5f5;
@@ -984,7 +985,9 @@ float:right;
 .content-item .item-box {
   display: block;
   height: 250px;
-  background: #fff;
+  background-color: #ffffff; 
+    background-size:cover;
+    background-position: center;
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
    position: relative;
    overflow: hidden;
@@ -994,6 +997,9 @@ float:right;
 
 /* Larger Mobile Devices */
  @media (min-width:460px) {
+
+
+  
    .content {
      padding:1.5em 1%;
      float:right;
@@ -1009,6 +1015,9 @@ float:right;
  }
 /* Tablets */
  @media (min-width:768px) {
+
+  
+
    .content {
      padding:1em 0;
      float:right;
@@ -1067,14 +1076,27 @@ float:right;
    }
  }
 
- .item-box > img{
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left:0;
-  right: 0;
-  width: auto;
+ .box1{
+
+  background-image: url("../images/458-F7LTHY.png");
  }
+
+.box2{
+  background-image: url("../images/PERFECT-AVENTADOR.png");
+  
+}
+
+.box3{
+  background-image: url("../images/workdesk.png");
+}
+
+.box4{
+  background-image: url("../images/watch.png");
+}
+
+.box5{
+  background-image: url("../images/jake-bradley-134654.png");
+}
 
  .item-box h2{
   color: #ff5252;
@@ -1327,3 +1349,23 @@ span.line5:before {
   -webkit-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
 }
+
+/* Larger Mobile Devices */
+ @media (min-width:460px) {
+
+
+  
+   
+ }
+/* Tablets */
+ @media (min-width:768px) {
+
+  
+
+  
+ }
+/* Laptops and Desktops */
+ @media (min-width:992px) {
+
+  
+ }

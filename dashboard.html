@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="css/dropit.css">
+<link rel="stylesheet" href="css/dropit2.css">
 </head>
 <body class="dashboard">
 
@@ -50,7 +51,16 @@
 	<div class="settings">
 		<img src="images/IMG-20170501-WA0042 (2).jpg"/>
 		<p>Pankhil M.</p>
-		<a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+        <ul class="setmenu">
+            <li>
+		        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>My Account</a></li>
+                  <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Collaborators</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
+              </ul>
+            </li>
+        </ul>
 	</div>
 </nav>
 <main role="main">
@@ -85,8 +95,7 @@
 		</div>
 		<div class="container">
        <div class="content-item">
-         <div class="item-box">
-          <img src="images/458 F7LTHY.png"/>
+         <div class="item-box box1">          
          </div>
        </div>
        <div class="content-item">
@@ -109,8 +118,7 @@ deployment of didactic little parable-ish stories. The story ["thing"] turns out
          </div>
        </div>
        <div class="content-item">
-         <div class="item-box">
-          <img src="images/PERFECT AVENTADOR.png"/>
+         <div class="item-box box2">        
          </div>
        </div>
        <div class="content-item">
@@ -121,13 +129,11 @@ deployment of didactic little parable-ish stories. The story ["thing"] turns out
          </div>
        </div>
        <div class="content-item">
-         <div class="item-box">
-          <img src="images/workdesk.png"/>
+         <div class="item-box box3">
          </div>
        </div>
        <div class="content-item">
-         <div class="item-box">
-          <img src="images/watch.png"/>
+         <div class="item-box box4">
           <div class="PlayBtn">
           <i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
          </div>
@@ -148,8 +154,8 @@ deployment of didactic little parable-ish stories. The story ["thing"] turns out
          </div>
        </div>
        <div class="content-item">
-         <div class="item-box">
-          <img src="images/jake-bradley-134654.png"/>
+         <div class="item-box box5">
+          
          </div>
        </div>
        <div class="content-item">
@@ -163,8 +169,10 @@ deployment of didactic little parable-ish stories. The story ["thing"] turns out
 </main>
 <script src="js/jquery-3.2.1.min.js"></script>
    <script src="js/dropit.js"></script>
+   <script src="js/dropit2.js"></script>
    <script type="text/javascript">
    $(".menu").dropit();
+   $(".setmenu").dropit2();
    $("#menu").click(function(){
     $("#left-nav").toggleClass("open",200);
    });
