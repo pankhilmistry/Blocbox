@@ -59,13 +59,6 @@ p {
    font-weight: 400;
  }
 
- blockquote {
- 	font-family: "Lora", serif;
-   font-size:28px;
-   font-weight: 400;
-   font-style: italic;
-   color: #f5f5f5;
- }
 
  .container {
  	margin-left: auto;
@@ -106,33 +99,23 @@ p {
   position: relative;
   margin:10px auto;
     width: 100%;
+    
 }
 
 @media screen and (min-width:500px) {
     .one-fifth {
         width: 50%;
+        
     }
 }
 
 @media screen and (min-width:800px) {
     .one-fifth {
          width: 17.9487179487179488%;
+
     }
 }
 
-.btn {
-  position: relative;
-   font-family: "Montserrat", sans-serif;
-   font-size: 21px;
-   font-weight: 600;
-   border-radius: 4px;
-   color:#f5f5f5;
-   text-decoration: none;
-   padding:10px 30px;
-   background: #0ADD8A;
-   border: 2px solid #0ADD8A;
-   box-shadow: 0px 2px 0px 0px #219653;
-}
 
  @media (min-width: 768px) {
    .container {
@@ -158,7 +141,7 @@ p {
 
 
 header {
-  height: 100vh;
+  
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -234,8 +217,7 @@ header::before {
    margin:60px 50px 10px;
  }
  header .hero h2 {
- 	min-width: 444px;
- 	max-width: 445px;
+ 	width: 444px;
  	text-align: left;
     margin:10px 50px;
 
@@ -262,6 +244,7 @@ header::before {
 .Benefits1 {
 	padding-top: 20px;
 	padding-bottom: 20px;
+  position:relative;
 }
 
 .Benefits1 h1{
@@ -346,6 +329,7 @@ header::before {
 .Benefits2 {
 	padding-top: 20px;
 	padding-bottom: 20px;
+  position:relative;
 }
 
 .Benefits2 h1{text-shadow: 2px 2px 5px #333;
@@ -427,6 +411,7 @@ header::before {
 .Pricing {
 	padding-top: 100px;
 	padding-bottom: 100px;
+  position:relative;
 }
 
 
@@ -455,6 +440,7 @@ margin: 40px auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Pricing ul {
@@ -560,6 +546,7 @@ margin: 40px auto;
 .Testimonials{
 	padding-top: 20px;
 	padding-bottom: 200px;
+  position:relative;
 }
 
 .Testimonials h1, .Testimonials h2{text-shadow: 2px 2px 5px #333;
@@ -567,42 +554,50 @@ margin: 40px auto;
 	margin: 0 0 10px 50px;
 }
 
-.Testimonials div.one-third{
+.Testimonials .blackbox div.one-third{
 	margin: 40px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.Testimonials-quote{
-	min-width: 660px;
+.Testimonials .blackbox div.one-third blockquote{
+	min-width: 600px;
 	position: relative;
 	text-align: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin: 20px 40px;
-	justify-content: center;
-
+  font-family: "Lora", serif;
+   font-size:28px;
+   font-weight: 400;
+   font-style: italic;
+   color: #f5f5f5;
+ }
 }
 
-.left-arrow i{
-	font-size: 100px;
-	color: #ff5252;
-	position: relative;
-	
-	}
 
-.right-arrow i{
-	font-size: 100px;
-	color: #ff5252;
-	position: relative;
-	
-	}
+.leftarrow i{
+  font-size: 100px;
+  color: #ff5252;
+  position: relative;
+   display: inline-block;
+  }
+
+.arrowright i{
+  font-size: 100px;
+  color: #ff5252;
+  position: relative;
+   display: inline-block;
+  }
 
 .blackbox {
 	background: #333;
 	position: relative;
 	min-height: 300px;
+  margin:40px auto;
+  display:flex;
+
 
 }
 
@@ -610,6 +605,7 @@ margin: 40px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  flex-wrap: wrap;
 }
 .Testimonials-client img{
   box-shadow: 0px 2px 10px #333;
@@ -652,18 +648,26 @@ margin: 40px auto;
 
 .Last-section{
 	padding-bottom: 200px;
+  position: relative;
 }
 
-.Last-section .one-third{
+.Last-section div.one-third{
 	display: flex;
 	align-items: center;
-	min-width: 700px;
-	text-align: center;
-	color: #f5f5f5;
 	justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 700px;
+}
+
+.Last-section .one-third h1{
+  text-align: center;
+  color: #f5f5f5;
+  max-width: 700px;
 }
 
 .Last-section a.btn {
+  margin-top:20px;
 	position: relative;
    font-family: "Montserrat", sans-serif;
    font-size: 21px;
@@ -689,6 +693,33 @@ margin: 40px auto;
     transform:translate(-900px, 100px);
 }
 
+/* Larger Mobile Devices */
+ @media (min-width:460px) {
+
+
+  
+   
+ }
+/* Tablets */
+ @media (min-width:768px) {
+
+  
+
+  
+ }
+/* Laptops and Desktops */
+ @media (min-width:992px) {
+
+  
+ }
+
+
+
+
+
+
+
+
 
  /*-----------------------Footer----------------------------------*/
 
@@ -707,6 +738,7 @@ footer {
  .links1{
  	display: flex;
  	justify-content: center;
+  flex-wrap: wrap;
  }
 
 footer nav {
@@ -792,8 +824,8 @@ font-family: "Montserrat", sans-serif;
 .left-nav{
   
   
-  background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 0.8), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
-  
+  background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 1), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
+  z-index: 100;
 
   height: 100vh;
   width:280px;
@@ -813,7 +845,7 @@ font-family: "Montserrat", sans-serif;
    display:block;
    width:280px;
    color: #f5f5f5;
-   background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 0.8), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
+   background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 1), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -978,6 +1010,20 @@ float:right;
   float: right;
 }
 
+.content .header a.btn{
+  position: relative;
+   font-family: "Montserrat", sans-serif;
+   font-size: 21px;
+   font-weight: 600;
+   border-radius: 4px;
+   color:#f5f5f5;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #0ADD8A;
+   border: 2px solid #0ADD8A;
+   box-shadow: 0px 2px 0px 0px #219653;
+}
+
 .content-item{
   width: 96%;
   margin:0 2% 25px;
@@ -1042,7 +1088,7 @@ float:right;
   color: #f5f5f5;
   height: 100vh;
   width: 16%;
-  background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 0.8), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
+  background: -webkit-linear-gradient(90deg, rgba(255, 82, 82, 1), rgba(174, 78, 81, 1), rgba(55, 71, 79, 1));
   float: left;
   position: fixed;
   display: block;
