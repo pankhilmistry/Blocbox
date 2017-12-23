@@ -573,15 +573,8 @@ margin: 40px auto;
    font-style: italic;
    color: #f5f5f5;
  }
-}
 
 
-.leftarrow i{
-  font-size: 100px;
-  color: #ff5252;
-  position: relative;
-   display: inline-block;
-  }
 
 .leftarrow i{
   font-size: 100px;
